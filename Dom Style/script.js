@@ -1,6 +1,5 @@
 const firstTitle = document.getElementById("first-title");
 firstTitle.style.color = "red";
-firstTitle.style.fontSize = "30px";
 
 // ====== title selected by id & applied style
 
@@ -18,3 +17,15 @@ const lastTitle = document.getElementById("last-title");
 lastTitle.style.color = "goldenrod";
 
 // ====== title selected by id & applied style
+
+const blogDetails = document.getElementsByClassName("blog-details");
+for (const p of blogDetails) {
+  console.log(p);
+}
+
+const nameOfOrganization = document.getElementById("name").value;
+console.log(nameOfOrganization);
+
+document.getElementById("button").addEventListener("click", function () {
+  document.body.style.backgroundColor = "red";
+});
