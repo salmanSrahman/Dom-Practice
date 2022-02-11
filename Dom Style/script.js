@@ -26,6 +26,13 @@ for (const p of blogDetails) {
 const nameOfOrganization = document.getElementById("name").value;
 console.log(nameOfOrganization);
 
+// =========== make background red & white ========
+
 document.getElementById("button").addEventListener("click", function () {
   document.body.style.backgroundColor = "red";
+});
+
+const button1 = document.querySelector("#button1");
+button1.addEventListener("click", function () {
+  document.body.style.backgroundColor = "white";
 });
