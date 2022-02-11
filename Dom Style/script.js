@@ -36,3 +36,16 @@ const button1 = document.querySelector("#button1");
 button1.addEventListener("click", function () {
   document.body.style.backgroundColor = "white";
 });
+
+// =========== new blog add by js ==========
+
+const blogContainer = document.getElementById("blog-container");
+const newBlog = document.createElement("div");
+const h3 = document.createElement("h3");
+h3.innerText = "my Awesome Blog -5";
+
+function add() {
+  const cbalance = document.getElementById("c-balance").innerText;
+  const inputValue = document.getElementById("input").value;
+  console.log(cbalance + inputValue);
+}
