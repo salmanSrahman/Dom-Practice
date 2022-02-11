@@ -49,3 +49,5 @@ function add() {
   const inputValue = document.getElementById("input").value;
   console.log(cbalance + inputValue);
 }
+
+// ========= input calculation =========
