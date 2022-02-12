@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-xl-12 p-5 shadow-lg">
                         <h3 class="mb-3">Login</h3>
-                        <form action="">
+                        <form>
                             <input type="text" placeholder="Email" class="w-100 form-control">
                             <input type="text" placeholder="password" class="w-100 form-control my-3">
                         </form>
@@ -30,17 +30,25 @@
 
         <!-- ============= log in part end ========== -->
         <section id="transaction-part">
-            <div class="row">
+            <div class="row g-5 mt-5">
                 <div class="col-xl-6">
-                    <div class="deposit-part p-5 shadow-lg">
+                    <div class="deposit-part p-5 shadow">
                         <h3 class="mb-4">Deposit</h3>
-                        <form action="">
-                            <input type="text" class="form-control mb-3" placeholder="You Want To Deposit">
-                            <button class="btn btn-success" type="submit">Deposit</button>
+                        <form>
+                            <input type="text" class="form-control mb-3" placeholder="$ You Want To Deposit">
                         </form>
+                        <button class="btn btn-success" type="submit">Deposit</button>
                     </div>
                 </div>
-                <div class="col-xl-6"></div>
+                <div class="col-xl-6">
+                    <div class="withdraw-part p-5 shadow">
+                        <h3 class="mb-4">Withdraw</h3>
+                        <form>
+                            <input type="text" class="form-control mb-3" placeholder="$ You Want To Withdraw">
+                        </form>
+                        <button class="btn btn-danger" type="submit">Withdraw</button>
+                    </div>
+                </div>
             </div>
 
         </section>
