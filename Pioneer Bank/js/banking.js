@@ -33,3 +33,5 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
 
   withdrawInput.value = "";
 });
+
+// ============ withdraw & balance part end ===========
