@@ -23,13 +23,13 @@
                  <div class="col-xl-4">
                      <div class="p-3 bg-info text-white rounded">
                          <h3 class="mb-3">Withdraw</h3>
-                         <h2>$<span class="withdraw">00</span> </h2>
+                         <h2>$<span id="withdraw-amount">00</span> </h2>
                      </div>
                  </div>
                  <div class="col-xl-4">
                      <div class="p-3 bg-warning text-white rounded">
                          <h3 class="mb-3">Balance</h3>
-                         <h2>$<span id="balance-amount">00</span> </h2>
+                         <h2>$<span id="balance-amount">1200</span> </h2>
                      </div>
                  </div>
              </div>
@@ -48,9 +48,9 @@
                      <div class="withdraw-part p-5 shadow">
                          <h3 class="mb-4">Withdraw</h3>
                          <form>
-                             <input type="text" class="form-control mb-3" placeholder="$ You Want To Withdraw">
+                             <input type="text" class="form-control mb-3" placeholder="$ You Want To Withdraw" id="withdraw-input">
                          </form>
-                         <button class="btn btn-danger" type="submit">Withdraw</button>
+                         <button class="btn btn-danger" type="submit" id="withdraw-btn">Withdraw</button>
                      </div>
                  </div>
              </div>
