@@ -23,3 +23,5 @@ document.getElementById("login-btn").addEventListener("click", function () {
     window.location.href = "banking.html";
   }
 });
+
+// ======= log in section to transaction part =========
