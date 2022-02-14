@@ -16,6 +16,11 @@ document.getElementById("login-btn").addEventListener("click", function () {
       "**Fill the password please!";
     return false;
   }
+  var secretEmail = "pioneer@gmail.com";
+  var secretNumber = 123456;
+  if (userEmailValue == secretEmail && userPasswordValue == secretNumber) {
+    window.location.href = "banking.html";
+  }
 });
 
 // ======= log in section to transaction part =========
