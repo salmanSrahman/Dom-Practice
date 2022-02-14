@@ -35,3 +35,7 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
 });
 
 // ============ withdraw & balance part end ===========
+
+document.getElementById("complete-btn").addEventListener("click", function () {
+  window.location.href = "complete.html";
+});
