@@ -17,3 +17,20 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
 });
 
 // ========== deposit & balance part end ============
+document.getElementById("withdraw-btn").addEventListener("click", function () {
+  const withdrawInput = document.getElementById("withdraw-input");
+  const withdrawValue = parseFloat(withdrawInput.value);
+  const withdrawAmount = document.getElementById("withdraw-amount");
+  const withdrawAmountText = parseFloat(withdrawAmount.innerText);
+
+  const withdrawTotal = withdrawValue + withdrawAmountText;
+  withdrawAmount.innerText = withdrawTotal;
+
+  const balanceTotal = balanceAmountText - withdrawTotal;
+  balanceAmount.innerText = balanceTotal;
+
+  withdrawInput.value = "";
+});
+
+// ============ withdraw & balance part end ===========
+
