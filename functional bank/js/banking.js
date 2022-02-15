@@ -1,25 +1,29 @@
 const balanceAmount = document.getElementById("balance-amount");
 const balanceAmountText = parseFloat(balanceAmount.innerText);
 
-document.getElementById("deposit-btn").addEventListener("click", function () {
-  const depositInput = document.getElementById("deposit-input");
+function getInput(id) {
+  const depositInput = document.getElementById(id);
   const depositValue = parseFloat(depositInput.value);
+  depositInput.value = "";
+  return depositValue;
+}
+
+document.getElementById("deposit-btn").addEventListener("click", function () {
+  const depositValue = getInput("deposit-input");
+
   const depositAmount = document.getElementById("deposit-amount");
   const depositAmountText = parseFloat(depositAmount.innerText);
-
   const depositTotal = depositAmountText + depositValue;
   depositAmount.innerText = depositTotal;
 
   const balanceTotal = balanceAmountText + depositValue;
   balanceAmount.innerText = balanceTotal;
-
-  depositInput.value = "";
 });
 
 // ========== deposit & balance part end ============
 document.getElementById("withdraw-btn").addEventListener("click", function () {
-  const withdrawInput = document.getElementById("withdraw-input");
-  const withdrawValue = parseFloat(withdrawInput.value);
+  const withdrawValue = getInput("withdraw-input");
+
   const withdrawAmount = document.getElementById("withdraw-amount");
   const withdrawAmountText = parseFloat(withdrawAmount.innerText);
 
@@ -28,8 +32,6 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
 
   const balanceTotal = balanceAmountText - withdrawTotal;
   balanceAmount.innerText = balanceTotal;
-
-  withdrawInput.value = "";
 });
 
 // ============ withdraw & balance part end ===========
