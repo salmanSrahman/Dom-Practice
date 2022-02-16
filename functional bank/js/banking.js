@@ -6,3 +6,11 @@ function inputField(id) {
   const depositAmountValueNumber = parseFloat(depositAmountValue);
   return depositAmountValueNumber;
 }
+function updateField(name, id) {
+    const addDeposit = document.getElementById(id);
+    const addDepositText = document.getElementById(id).innerText;
+    const addDepositNumber = parseFloat(addDepositText);
+
+    const totalDeposit = name + addDepositNumber;
+    document.getElementById(id).innerText = totalDeposit;
+}
