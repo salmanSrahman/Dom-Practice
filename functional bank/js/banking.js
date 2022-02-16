@@ -30,3 +30,14 @@ function updateBalance(value) {
 }
 
 // =========== all function part end ===========
+depositBtn.addEventListener("click", function () {
+    const depositAmountValueNumber = inputField("deposit_amount");
+    if (depositAmountValueNumber > 0) {
+        updateField(depositAmountValueNumber, "add_deposit")
+        updateBalance(depositAmountValueNumber);
+
+    }
+})
+
+
+// ============== deposit button part end ===========
