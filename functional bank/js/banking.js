@@ -14,3 +14,19 @@ function updateField(name, id) {
     const totalDeposit = name + addDepositNumber;
     document.getElementById(id).innerText = totalDeposit;
 }
+
+function getCurrentBalance() {
+    const addBalance = document.getElementById("add_Balance");
+    const addBalanceText = document.getElementById("add_Balance").innerText;
+    const addBalanceNumber = parseFloat(addBalanceText);
+    return addBalanceNumber;
+
+}
+
+function updateBalance(value) {
+    const addBalanceNumber = getCurrentBalance();
+    const totalBalance = addBalanceNumber + value;
+    document.getElementById("add_Balance").innerText = totalBalance;
+}
+
+// =========== all function part end ===========
