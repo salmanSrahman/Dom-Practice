@@ -41,3 +41,24 @@ depositBtn.addEventListener("click", function () {
 
 
 // ============== deposit button part end ===========
+
+const withdrawBtn = document.getElementById("withdraw_btn");
+withdrawBtn.addEventListener("click", function () {
+    const currentBalance = getCurrentBalance()
+
+    const withdrawAmountValueNumber = inputField("withdraw_amount");
+    if (withdrawAmountValueNumber > 0 && withdrawAmountValueNumber < currentBalance) {
+        updateField(withdrawAmountValueNumber, "add_withdraw");
+        updateBalance(-1 * withdrawAmountValueNumber);
+
+    }
+
+    if (withdrawAmountValueNumber > currentBalance) {
+        alert("Withdraw Not Possible. You Dont Have Enough Money")
+    }
+
+
+    // ========= withdraw part end =========
+
+
+})
