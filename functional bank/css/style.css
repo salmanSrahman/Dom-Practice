@@ -1,0 +1,9 @@
+#transaction_area {
+    margin-top: 150px !important;
+}
+
+#final_message {
+    display: none;
+    margin: 280px auto;
+    text-align: center;
+}
